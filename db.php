@@ -1,9 +1,9 @@
 <?php
-$host = getenv('MYSQLHOST') ?: 'nozomi.proxy.rlwy.net';
-$port = getenv('MYSQLPORT') ?: '34085';
+$host = getenv('MYSQLHOST') ?: 'mainline.proxy.rlwy.net';
+$port = getenv('MYSQLPORT') ?: '52296';
 $db   = getenv('MYSQLDATABASE') ?: 'railway';
 $user = getenv('MYSQLUSER') ?: 'root';
-$pass = getenv('MYSQLPASSWORD'); // Set this in Vercel Environment Variables!
+$pass = getenv('MYSQLPASSWORD')?:'PTYDmdhVYIDfzCgGBUEXXrILbQuotXzW'; // Set this in Vercel Environment Variables!
 
 $conn = new mysqli($host, $user, $pass, $db, (int)$port);
 
